@@ -9,12 +9,18 @@ import javax.persistence.Table;
 @Table(name="location")
 public class Locations {
 	@Id
+	@GeneratedValue(stratege = GenerationType.IDENTITY)
 	private long id;
+	
+	@Column(name="name",nullable=false, length=45)
 	private String name;
 	
-	@Column(name="code")
+	@Column(name="code",nullable=false, length=45)
 	private String codes;
+	
+	@Column(name="type",nullable=false, length=45)
 	private String type;
+	
 	public long getId() {
 		return id;
 	}

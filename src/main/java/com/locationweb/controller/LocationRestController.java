@@ -44,7 +44,7 @@ public class LocationRestController {
 	
 	//handler method
 	
-	@RequestMapping("show")
+	@GetMapping("show")
 	public String showLocationPage() {
 		return "create_location"; 
 	}

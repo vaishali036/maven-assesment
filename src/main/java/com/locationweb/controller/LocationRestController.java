@@ -23,6 +23,11 @@ public class LocationRestController {
 	@Autowired
 	private LocationRepository locationRepo;
 	
+	@RequestMapping("show")
+	public String showLocationPage() {
+		return "create_location"; 
+	}
+	
 	@GetMapping
 	public List<Locations> getLocations(){
 		List<Locations> locations = locationRepo.findAll();

@@ -27,7 +27,7 @@ public class LocationController {
 	
 	//handler method
 	
-	@GetMapping("/show")
+	@RequestMapping("show")
 	public String showLocationPage() {
 		return "create_location"; 
 	}

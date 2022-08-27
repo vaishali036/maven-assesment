@@ -16,6 +16,7 @@ import com.locationweb.services.LocationService;
 import com.locationweb.utility.EmailService;
 
 @Controller
+@RequestMapping("/hello")
 public class LocationController {
 
 	@Autowired
